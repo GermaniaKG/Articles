@@ -1,0 +1,36 @@
+{
+	"name":        "germania-kg/articles",
+
+	"type":        "library",
+	"license":     "proprietary",
+
+	"authors": [
+		{
+			"name":  "Carsten Witt",
+			"email": "carstenwitt@germania-kg.de",
+			"role":  "Developer"
+		}
+	],
+
+  "autoload": {
+      "psr-4": {
+          "Germania\\Articles\\": "src/"
+      }
+  },
+
+  "autoload-dev": {
+      "psr-4": { "tests\\": "tests/src" }
+  },
+
+	"require": {
+		"germania-kg/prices": "^1.0",
+		"germania-kg/categories": "^1.1",
+		"container-interop/container-interop": "^1.1"
+	},
+
+	"require-dev": {
+			"satooshi/php-coveralls": "^1.0",
+			"phpunit/phpunit": "^5.2"
+	}
+
+}
