@@ -44,16 +44,16 @@
         },
         {
             "name": "germania-kg/categories",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GermaniaKG/Categories.git",
-                "reference": "5d2d148f0087df1d135a093996ff166f862ee77c"
+                "reference": "7c344543556f7c9aeb0dba688d0612e7135e4a7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GermaniaKG/Categories/zipball/5d2d148f0087df1d135a093996ff166f862ee77c",
-                "reference": "5d2d148f0087df1d135a093996ff166f862ee77c",
+                "url": "https://api.github.com/repos/GermaniaKG/Categories/zipball/7c344543556f7c9aeb0dba688d0612e7135e4a7b",
+                "reference": "7c344543556f7c9aeb0dba688d0612e7135e4a7b",
                 "shasum": ""
             },
             "require": {
@@ -84,9 +84,9 @@
             ],
             "support": {
                 "issues": "https://github.com/GermaniaKG/Categories/issues",
-                "source": "https://github.com/GermaniaKG/Categories/tree/master"
+                "source": "https://github.com/GermaniaKG/Categories/tree/1.1.6"
             },
-            "time": "2019-02-19T08:39:56+00:00"
+            "time": "2022-03-30T10:22:15+00:00"
         },
         {
             "name": "germania-kg/prices",
