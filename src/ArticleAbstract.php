@@ -219,8 +219,6 @@ abstract class ArticleAbstract implements ArticleInterface
     /**
      * Sets the value of prices.
      *
-     * @param mixed $prices the prices
-     *
      * @return self
      */
     public function setPrices( array $prices)

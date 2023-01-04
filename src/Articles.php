@@ -15,7 +15,6 @@ class Articles implements ArticlesInterface
 
 
     /**
-     * @implements ContainerInterface
      * @return ArticleInterface
      */
     public function get( $id )
@@ -28,7 +27,6 @@ class Articles implements ArticlesInterface
 
 
     /**
-     * @implements ContainerInterface
      * @return boolean
      */
     public function has ($id )
@@ -37,19 +35,13 @@ class Articles implements ArticlesInterface
     }
 
 
-
-    /**
-     * @implements IteratorAggregate
-     */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator( $this->articles );
     }
 
-
-    /**
-     * @implements Countable
-     */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->articles);

@@ -12,7 +12,7 @@ class PdoArticles extends Articles implements ArticlesInterface
     public $prices;
 
     /**
-     * @var PDO
+     * @var \PDO
      */
     public $pdo;
 
@@ -56,7 +56,7 @@ class PdoArticles extends Articles implements ArticlesInterface
         $stmt->setFetchMode( \PDO::FETCH_CLASS, $article ? get_class($article) : Article::class );
 
         if (!$stmt->execute()):
-            throw new \RuntimeException("Could not retrieve Articles for category '$category_slug' from database");
+            throw new \RuntimeException("Could not retrieve articles from database");
         endif;
 
         $this->articles = $stmt->fetchAll(\PDO::FETCH_UNIQUE);
