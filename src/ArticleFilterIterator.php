@@ -4,6 +4,8 @@ namespace Germania\Articles;
 
 class ArticleFilterIterator extends \FilterIterator
 {
+
+
     public $article_id;
 
     public function __construct(\Traversable $iterator , ArticleInterface $article)
@@ -13,6 +15,7 @@ class ArticleFilterIterator extends \FilterIterator
         $this->article_id = $article->getId();
     }
 
+    #[\ReturnTypeWillChange]
     public function accept()
     {
         $current = $this->getInnerIterator()->current();
